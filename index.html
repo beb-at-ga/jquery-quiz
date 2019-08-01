@@ -10,13 +10,10 @@
   <header>
     <h1>Quiz Time!</h1>
   </header>
-  <br>
   <main>
     <div id="question">
-      <!-- append <p> here for question -->
-      <br>
     </div>
-    <form id="answers" name="foo">
+    <form id="answers" name="answer-form">
       <div class="form-group">
         <input id="0" type="radio" name="answer-options">
         <label for="0"></label>
@@ -33,14 +30,12 @@
       <input id="3" type="radio" name="answer-options">
       <label for="3"></label>
       </div>
-      <button class="button" id="submit" type="submit" value="Submit">Submit</button>
+      <!-- <button class="button" id="submit" type="submit" value="Submit">Submit</button> -->
     </form>
-
-    <button class="button" href="#" id="next" value="Next">next</button>
-    <!--next page-->
-    <button class="button" href="#" id="prev" value="Previous">previous</button>
-    <!--previous-->
-
+    <div class="button-wrapper">
+      <button class="button" id="next" value="Next">next</button>
+      <button class="button" id="prev" value="Previous">previous</button>
+    </div>
 
   </main>
 
