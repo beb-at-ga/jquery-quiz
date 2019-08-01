@@ -70,10 +70,13 @@ $('.button').on('click', function (event) {
 });
 
 let displayQuestion = function (questions) {
+
     $('#question').html(questions[clickCount].prompt);
 
     for (let i = 0; i < questions[clickCount].answers.length; i++) {
-        $(`label[for='${i}']`).html(questions[clickCount].answers[i]);
+        let label = $(`label[for='${i}']`);
+        label.html(questions[clickCount].answers[i]);
+        label.checked = false;
     }
 
     $("#next").attr("disabled", true);
@@ -88,7 +91,7 @@ function finalScore() {
 
     $('form[name="answer-form"]').hide();
     $(".button").hide();
-    
+
     var button = document.createElement("button");
     button.innerHTML = "Play Again?";
     button.classList.add("button");
@@ -99,4 +102,4 @@ function finalScore() {
     button.addEventListener("click", function () {
         location.reload();
     });
-}   
+}
