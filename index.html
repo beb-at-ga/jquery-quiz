@@ -1,23 +1,49 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>JQuery Quiz</title>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 </head>
+
 <body>
   <header>
-  <h1>Quiz Time</h1>
-</header>
-  <!-- TODO: ADD YOUR HTML CODE HERE -->
-  
-  <!-- TODO: ADD JQUERY DEPENDENCY -->
-  <!-- TODO: ADD YOUR JS FILES -->
+    <h1>Quiz Time!</h1>
+  </header>
+  <br>
+  <main>
+    <div id="question">
+      <!-- append <p> here for question -->
+      <br>
+    </div>
+    <form id="answers">
+      <label for="0"></label>
+      <input id="0" type="radio" name="answer-options">
 
+      <label for="1"></label>
+      <input id="1" type="radio" name="answer-options">
+
+      <label for="2"></label>
+      <input id="2" type="radio" name="answer-options">
+
+      <label for="3"></label>
+      <input id="3" type="radio" name="answer-options">
+
+      <button class="button" id="submit" type="submit" value="Submit">Submit</button>
+    </form>
+
+    <button class="button" href="#" id="next" value="Next">next</button>
+    <!--next page-->
+    <button class="button" href="#" id="prev" value="Previous">previous</button>
+    <!--previous-->
+
+
+  </main>
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="./js/main.js"></script>
 
 </body>
-</html>
 
+</html>
